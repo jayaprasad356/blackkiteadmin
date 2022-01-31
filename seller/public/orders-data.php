@@ -91,7 +91,7 @@ if (isset($res[0]) && !empty($res[0])) {
                                 <th style="width: 10px">O. Note</th>
                                 <td><?php echo $res[0]['order_note']; ?></td>
                             </tr>
-                            <tr>
+                            <!-- <tr>
                                 <th style="width: 10px">Area</th>
                                 <?php
                                 if (!empty($res[0]['area_id'])) {
@@ -114,7 +114,7 @@ if (isset($res[0]) && !empty($res[0])) {
                                 $res_pincodes = $db->getResult();
                                 ?>
                                 <td><?= (!empty($res_pincodes)) ? $res_pincodes[0]['pincode'] : "" ?></td>
-                            </tr>
+                            </tr> -->
                             <?php
                             if ($function->get_seller_permission($seller_id, 'view_order_otp')) {
                             ?>
